@@ -12,9 +12,9 @@
 </div>
     <div class="span8">
       <% if current_user.contacts.any? %>
-        <p>You have <%= current_user.contacts.count %> contacts</p>      
+        You have <%= current_user.contacts.count %> contacts</br>      
       <% else %>
-        <p>You have no contacts, Add some? </p>
+        You have no contacts, Add some? </br>      
         <%= link_to "Add a new contact", controller: "contacts", action: "new" %>
       <% end %>   
     </div>
