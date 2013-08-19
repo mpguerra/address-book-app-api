@@ -7,7 +7,6 @@ AddressBookAppDevise::Application.routes.draw do
 
   namespace :api do
     resources :contacts
-    resources :webhooks
     get '*path', :to => redirect("/api/%{path}")
   end
 
